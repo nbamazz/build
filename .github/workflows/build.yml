@@ -2,9 +2,11 @@ name: Build PrimeSMP Scoreboard
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -15,15 +17,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Java 21
+      - name: Set up Java 21
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '21'
           cache: maven
 
-      - name: Build
-        run: mvn -B clean package
+      - name: Show project files
+        run: |
+          pwd
+          ls -la
+          find . -name pom.xml -print
+
+      - name: Build plugin
+        run: mvn -B -f pom.xml clean package
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
