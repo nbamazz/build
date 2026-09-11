@@ -1,0 +1,24 @@
+name: PrimeSMPScoreboard
+version: 2.0.0
+main: me.primesmp.scoreboard.PrimeSMPScoreboard
+api-version: '1.21'
+author: PrimeSMP
+description: PrimeSMP animated scoreboard with Vault economy, ranks, shards, playtime, ping, teams, online count and TPS.
+softdepend:
+  - Vault
+  - Essentials
+  - EssentialsX
+  - LuckPerms
+
+commands:
+  primescoreboard:
+    description: PrimeSMP Scoreboard commands
+    aliases: [psb]
+    usage: /psb <on|off|reload>
+    permission: primesmp.scoreboard.use
+
+permissions:
+  primesmp.scoreboard.use:
+    default: true
+  primesmp.scoreboard.reload:
+    default: op

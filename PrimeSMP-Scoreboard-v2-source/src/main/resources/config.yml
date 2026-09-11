@@ -1,0 +1,47 @@
+scoreboard:
+  enabled: true
+  update-interval: 20
+  title-interval: 5
+
+  animated-title:
+    - "&b&lP&f&lRIME SMP"
+    - "&f&lP&b&lRIME SMP"
+    - "&b&lPR&f&lIME SMP"
+    - "&f&lPR&b&lIME SMP"
+    - "&b&lPRI&f&lME SMP"
+    - "&f&lPRI&b&lME SMP"
+    - "&b&lPRIM&f&lE SMP"
+    - "&f&lPRIM&b&lE SMP"
+    - "&b&lPRIME &f&lSMP"
+    - "&f&lPRIME &b&lSMP"
+    - "&b&lPRIME S&f&lMP"
+    - "&f&lPRIME S&b&lMP"
+    - "&b&lPRIME SM&f&lP"
+    - "&f&lPRIME SM&b&lP"
+    - "&b&lPRIME SMP"
+
+  lines:
+    - ""
+    - "&fPlayer: &b%player%"
+    - "&fRank: &d%rank%"
+    - "&fMoney: &a$%money%"
+    - "&fKills: &c%kills%"
+    - "&fDeaths: &c%deaths%"
+    - "&fShards: &d%shards%"
+    - "&fPlaytime: &e%playtime%"
+    - "&fPing: &b%ping%ms"
+    - "&fTeam: &b%team%"
+    - "&fOnline: &a%online%/%max_players%"
+    - "&fTPS: &a%tps%"
+    - ""
+    - "&bprimesmp.net"
+
+shards:
+  starting-balance: 0
+
+messages:
+  no-permission: "&cYou don't have permission."
+  enabled: "&aPrimeSMP Scoreboard enabled."
+  disabled: "&cPrimeSMP Scoreboard disabled."
+  reloaded: "&aPrimeSMP Scoreboard configuration reloaded."
+  usage: "&e/psb <on|off|reload>"
